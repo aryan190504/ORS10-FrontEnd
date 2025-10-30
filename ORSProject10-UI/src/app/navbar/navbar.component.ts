@@ -115,7 +115,7 @@ export class NavbarComponent implements OnInit {
     //   this.form.message = "Logout Successfully";
     //   console.log(this.form.message);
     //  _self.servicelocator.router.navigateByUrl('/login/true');
-    _self.httpService.get("http://localhost:4200/User/logout", function (res) {
+    _self.httpService.get("http://localhost:8084/User/logout", function (res) {
       _self.servicelocator.router.navigateByUrl('/login/true');
       if (res.success) {
         localStorage.clear();
